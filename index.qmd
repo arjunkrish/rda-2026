@@ -64,9 +64,9 @@ link <- function(text, href) {
 schedule <- tribble(
   ~Week, ~Date, ~Topic, ~Materials, ~Assignments,
   
-  # Week 0
   "—", "Feb 03", "**NO CLASS**", "", "",
   
+  # Week 0
   "0", "Feb 10", "**NO CLASS; WATCH SHARED VIDEO**", 
   paste("Video", "•", link("Setup guide", "resources/software-setup.md")),
   "Complete setup<br>Statistical checklist",
@@ -125,7 +125,6 @@ schedule <- tribble(
   "11", "Apr 28", "Reproducible research, Data sharing, and Ethical transparency",
   paste(link("Slides", "lectures/11-reproducibility/slides.html"), "•", link("Notes", "lectures/11-reproducibility/notes.pdf")),
   paste(link("HW11", "assignments/hw11/hw11.html"), "•", link("Reading", "readings/weeks11-readings.md")),
-  link("Reading", "readings/week11-readings.md"),
   
   # Week 12
   "12", "May 05", "AI-assisted data analysis",
