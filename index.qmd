@@ -136,7 +136,7 @@ schedule <- tribble(
 schedule %>%
   kbl(
     col.names = c("Week", "Date", "Topic", "Learning Materials", "Assignments & Reading"),
-    format = "html"
+    format = "html",
     escape = FALSE,
     align = c("c", "l", "l", "l", "l")
   ) %>%
