@@ -69,7 +69,7 @@ schedule <- tribble(
   # Week 0
   "0", "Feb 10", "**NO CLASS; WATCH SHARED VIDEO**", 
   paste("Video", "•", link("Setup guide", "resources/software-setup.md")),
-  "Complete setup<br>Statistical checklist",
+  paste(link("Complete setup", "resources/software-setup.md"), "•", link("Statistical checklist","https://forms.gle/Mxx7BWDWR6pahzJJ8")),
   
   # Week 1
   "1", "Feb 17", "Scientific method, Critical evaluation, and Cognitive biases",
@@ -405,8 +405,7 @@ Yes! There will be an end-of-term exam.
 
 - **Companion textbook:** [*Rethinking Data Analysis: A Practitioner's Guide to Statistical Wisdom*](https://arjunkrish.github.io/rethinking-data-analysis) (in development)
 - **Software setup guide:** [Installation instructions](resources/software-setup.md)
-- **Statistical background:** [Recommended preparatory materials](resources/statistics-review.md)
-- **Coding tutorials:** [R and Python resources](resources/coding-resources.md)
+- **Statistical background & coding tutorials:** [Recommended preparatory materials](resources/preparatory-materials.md)
 - **Mental health resources:** [Counseling and Psychological Services (CAPS)](https://www.cuanschutz.edu/offices/health-and-wellness-center/mental-health)
 
 ---
