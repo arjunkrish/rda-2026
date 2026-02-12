@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "HMGP 7622: Rethinking Data Analysis"
+  description: "A researcher’s guide to avoiding missteps and misuse"
+  site-url: https://arjunkrish.github.io/rda-2026
+  repo-url: https://github.com/arjunkrish/rda-2026
+  repo-actions: [edit, issue]
+  
+  page-navigation: true
+  
+  navbar:
+    background: primary
+    logo: assets/images/course-banner.png
+    left:
+      - text: "Course Home"
+        href: index.qmd
+      - text: "Textbook"
+        href: https://arjunkrish.github.io/rethinking-data-analysis
+      - text: "Resources"
+        href: resources/
+    
+    right:
+      - icon: github
+        href: https://github.com/arjunkrish/rda-2026
+      - icon: envelope
+        href: mailto:arjun.krishnan@cuanschutz.edu
+
+  page-footer:
+    left: "© 2026 Arjun Krishnan"
+    right: 
+      - text: "License: CC BY-SA 4.0"
+        href: https://creativecommons.org/licenses/by-sa/4.0/
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - assets/css/custom.css
+    css: assets/css/custom.css
+    toc: true
+    toc-depth: 2
+    toc-location: right
+    code-link: true
+    anchor-sections: true
