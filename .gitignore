@@ -16,20 +16,39 @@ renv/staging/
 # Quarto
 .quarto/
 _site/
+_book/
 *.html
-*_cache/
 *_files/
+*_cache/
 
 # Python
 __pycache__/
 *.py[cod]
+*.pyc
 .ipynb_checkpoints/
+.venv/
+env/
+venv/
 
 # macOS
 .DS_Store
 Icon?
+Icon
 ._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+~$*
+_quarto_internal_scss_error.scss
