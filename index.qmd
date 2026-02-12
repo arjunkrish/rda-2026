@@ -57,6 +57,10 @@ Lab: [thekrishnanlab.org](https://www.thekrishnanlab.org)
 library(tidyverse)
 library(kableExtra)
 
+link <- function(text, href) {
+  sprintf('<a href="%s">%s</a>', href, text)
+}
+
 schedule <- tribble(
   ~Week, ~Date, ~Topic, ~Materials, ~Assignments,
   
@@ -64,73 +68,74 @@ schedule <- tribble(
   "—", "Feb 03", "**NO CLASS**", "", "",
   
   "0", "Feb 10", "**NO CLASS; WATCH SHARED VIDEO**", 
-  "Video • [Setup guide](resources/software-setup.md)",
+  "Video • link("Setup guide", "resources/software-setup.md")",
   "Complete setup<br>Statistical checklist",
   
   # Week 1
   "1", "Feb 17", "Scientific method, Critical evaluation, and Cognitive biases",
-  "[Slides](lectures/01-scientific-method/slides.html) • [Notes](lectures/01-scientific-method/notes.pdf)",
-  "[Reading](readings/week01-readings.md)",
+  paste(link("Slides", "lectures/01-scientific-method/slides.html"), "•", link("Notes", "lectures/01-scientific-method/notes.pdf")),
+  link("Reading", "readings/week01-readings.md"),
   
   # Week 2
   "2", "Feb 24", "Error and uncertainty estimation",
-  "[Slides](lectures/02-uncertainty/slides.html) • [Notes](lectures/02-uncertainty/notes.pdf)",
-  "[HW1](assignments/hw1/hw1.html)<br>[Reading](readings/week02-readings.md)",
+  paste(link("Slides", "lectures/02-uncertainty/slides.html"), "•", link("Notes", "lectures/02-uncertainty/notes.pdf")),
+  paste(link("HW1", "assignments/hw1/hw1.html"), "•", link("Reading", "readings/week02-readings.md")),
   
   # Week 3
   "3", "Mar 03", "P-values, P-hacking, and Multiple testing",
-  "[Slides](lectures/03-pvalues/slides.html) • [Notes](lectures/03-pvalues/notes.pdf)",
-  "[HW2](assignments/hw2/hw2.html)<br>[Reading](readings/week03-readings.md)",
+  paste(link("Slides", "lectures/03-pvalues/slides.html"), "•", link("Notes", "lectures/03-pvalues/notes.pdf")),
+  paste(link("HW2", "assignments/hw2/hw2.html"), "•", link("Reading", "readings/week03-readings.md")),
   
   # Week 4
   "4", "Mar 10", "Error types and Statistical power",
-  "[Slides](lectures/04-power/slides.html) • [Notes](lectures/04-power/notes.pdf)",
-  "[HW3](assignments/hw3/hw3.html)<br>[Reading](readings/week04-readings.md)",
+  paste(link("Slides", "lectures/04-power/slides.html"), "•", link("Notes", "lectures/04-power/notes.pdf")),
+  paste(link("HW3", "assignments/hw3/hw3.html"), "•", link("Reading", "readings/week04-readings.md")),
   
   # Week 5
   "5", "Mar 17", "Pseudoreplication and Confounding",
-  "[Slides](lectures/05-pseudoreplication/slides.html) • [Notes](lectures/05-pseudoreplication/notes.pdf)",
-  "[HW4](assignments/hw4/hw4.html)<br>[Reading](readings/week05-readings.md)",
+  paste(link("Slides", "lectures/05-pseudoreplication/slides.html"), "•", link("Notes", "lectures/05-pseudoreplication/notes.pdf")),
+  paste(link("HW4", "assignments/hw4/hw4.html"), "•", link("Reading", "readings/week05-readings.md")),
   
   # Week 6
   "6", "Mar 24", "Circular analysis, Regression to the mean, and Sampling biases",
-  "[Slides](lectures/06-circular-analysis/slides.html) • [Notes](lectures/06-circular-analysis/notes.pdf)",
-  "[HW5](assignments/hw5/hw5.html)<br>[Reading](readings/week06-readings.md)",
+  paste(link("Slides", "lectures/06-circular-analysis/slides.html"), "•", link("Notes", "lectures/06-circular-analysis/notes.pdf")),
+  paste(link("HW5", "assignments/hw5/hw5.html"), "•", link("Reading", "readings/week06-readings.md")),
   
   # Week 7
   "7", "Mar 31", "Bayesian reasoning",
-  "[Slides](lectures/07-bayesian/slides.html) • [Notes](lectures/07-bayesian/notes.pdf)",
-  "[Reading](readings/week07-readings.md)",
+  paste(link("Slides", "lectures/07-bayesian/slides.html"), "•", link("Notes", "lectures/07-bayesian/notes.pdf")),
+  link("Reading", "readings/week07-readings.md"),
   
   # Week 8
   "8", "Apr 07", "Measuring correlations",
-  "[Slides](lectures/08-correlation/slides.html) • [Notes](lectures/08-correlation/notes.pdf)",
-  "[HW6](assignments/hw6/hw6.html)<br>[Reading](readings/week08-readings.md)",
+  paste(link("Slides", "lectures/08-correlation/slides.html"), "•", link("Notes", "lectures/08-correlation/notes.pdf")),
+  paste(link("HW6", "assignments/hw6/hw6.html"), "•", link("Reading", "readings/week08-readings.md")),
   
   # Week 9
   "9", "Apr 14", "High-dimensional data and Machine learning pitfalls",
-  "[Slides](lectures/09-highdim-ml/slides.html) • [Notes](lectures/09-highdim-ml/notes.pdf)",
-  "[HW7](assignments/hw7/hw7.html)<br>[Reading](readings/week09-readings.md)",
+  paste(link("Slides", "lectures/09-highdim-ml/slides.html"), "•", link("Notes", "lectures/09-highdim-ml/notes.pdf")),
+  paste(link("HW7", "assignments/hw7/hw7.html"), "•", link("Reading", "readings/week09-readings.md")),
   
   # Week 10
   "10", "Apr 21", "Data visualization and Statistical communication",
-  "[Slides](lectures/10-visualization/slides.html) • [Notes](lectures/10-visualization/notes.pdf)",
-  "[Reading](readings/week10-readings.md)",
+  paste(link("Slides", "lectures/10-visualization/slides.html"), "•", link("Notes", "lectures/10-visualization/notes.pdf")),
+  link("Reading", "readings/week10-readings.md"),
   
   # Week 11
   "11", "Apr 28", "Reproducible research, Data sharing, and Ethical transparency",
-  "[Slides](lectures/11-reproducibility/slides.html) • [Notes](lectures/11-reproducibility/notes.pdf)",
-  "[Reading](readings/week11-readings.md)",
+  paste(link("Slides", "lectures/11-reproducibility/slides.html"), "•", link("Notes", "lectures/11-reproducibility/notes.pdf")),
+  link("Reading", "readings/week11-readings.md"),
   
   # Week 12
   "12", "May 05", "AI-assisted data analysis",
-  "[Slides](lectures/12-ai-assisted/slides.html) • [Notes](lectures/12-ai-assisted/notes.pdf)",
+  paste(link("Slides", "lectures/12-ai-assisted/slides.html"), "•", link("Notes", "lectures/12-ai-assisted/notes.pdf")),
   "**Final exam**"
 )
 
 schedule %>%
   kbl(
     col.names = c("Week", "Date", "Topic", "Learning Materials", "Assignments & Reading"),
+    format = "html"
     escape = FALSE,
     align = c("c", "l", "l", "l", "l")
   ) %>%
