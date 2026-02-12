@@ -1,4 +1,31 @@
+/*-- scss:rules --*/
+
 /* Course website custom styles */
+
+/* Hero banner */
+.hero-banner {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.hero-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Instructor info box */
+.instructor-info {
+  background-color: #f8f9fa;
+  padding: 1.5em;
+  border-radius: 8px;
+  border-left: 4px solid #0066cc;
+  margin: 1em 0;
+  overflow: auto;
+}
+
+/* ... rest of your CSS ... */
 
 /* Hero banner */
 .hero-banner {

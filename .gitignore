@@ -1,15 +1,10 @@
+# R
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-.quarto/
-_site/
-*.html
 
-# macOS
-.DS_Store
-Icon?
-._*
+# renv
 renv/library/
 renv/local/
 renv/cellar/
@@ -17,3 +12,24 @@ renv/lock/
 renv/python/
 renv/sandbox/
 renv/staging/
+
+# Quarto
+.quarto/
+_site/
+*.html
+*_cache/
+*_files/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+Icon?
+._*
+
+# IDE
+.vscode/
+.idea/
