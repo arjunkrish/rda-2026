@@ -36,10 +36,8 @@ website:
 
 format:
   html:
-    theme: 
-      - cosmo
-      - assets/css/custom.scss
-    css: assets/css/custom.scss
+    theme: cosmo
+    css: assets/css/custom.css
     toc: true
     toc-depth: 2
     toc-location: right
