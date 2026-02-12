@@ -1,0 +1,113 @@
+/* Course website custom styles */
+
+/* Hero banner */
+.hero-banner {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.hero-banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Instructor info box */
+.instructor-info {
+  background-color: #f8f9fa;
+  padding: 1.5em;
+  border-radius: 8px;
+  border-left: 4px solid #0066cc;
+  margin: 1em 0;
+  overflow: auto;
+}
+
+.instructor-info img {
+  border: 3px solid #0066cc;
+}
+
+/* Calendar styling */
+.calendar-note {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 4px;
+}
+
+/* FAQ section */
+.faq {
+  margin-top: 1em;
+}
+
+.faq p {
+  margin-bottom: 1.5em;
+}
+
+.faq strong {
+  color: #0066cc;
+  font-size: 1.05em;
+}
+
+/* Table enhancements */
+table {
+  margin: 1.5em 0;
+}
+
+th {
+  background-color: #f8f9fa !important;
+  font-weight: 600;
+}
+
+/* Callout boxes */
+.callout-tip {
+  border-left-color: #28a745;
+  background-color: #f0fff4;
+}
+
+.callout-note {
+  border-left-color: #0066cc;
+  background-color: #e7f3ff;
+}
+
+.callout-warning {
+  border-left-color: #ffc107;
+  background-color: #fff3cd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .instructor-info img {
+    float: none !important;
+    display: block;
+    margin: 0 auto 1em auto;
+  }
+  
+  table {
+    font-size: 0.9em;
+  }
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section headers */
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+h3 {
+  color: #495057;
+  margin-top: 1.5em;
+}
