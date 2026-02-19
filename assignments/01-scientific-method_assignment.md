@@ -2,6 +2,9 @@
 
 This assignment is designed to help you recognize cognitive biases, evaluate statistical claims, and identify common pitfalls in study design.
 
+Write your answers in a separate text docuent, convert to PDF, and submit using
+[this form](https://forms.gle/977e4vrVshwTyTcK7).
+
 
 ## 1\. Distinguishing research types (exploratory vs. confirmatory)
 
