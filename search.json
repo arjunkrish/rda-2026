@@ -84,6 +84,27 @@
     "text": "Download Anaconda (Individual Edition) from: https://www.anaconda.com/products/distribution\nThis installs:\n\nPython\nJupyter Notebook\nCore scientific libraries\n\nFollow installation instructions for your OS.\n\n\n\n\nOpen Anaconda Prompt (or terminal) and run:\nconda create -n stats_course python=3.11\nconda activate stats_course\nconda install numpy pandas matplotlib seaborn scipy jupyter\n\n\n\n\nWe will use:\n\nnumpy → arrays, random numbers, simulations\npandas → data wrangling\nmatplotlib → plotting\nseaborn → statistical visualization\nscipy → statistical tests\n\nPython built-ins already support:\n\nfor / while loops\nbasic math\nrandom via numpy.random\n\n\n\n\n\nStart Jupyter:\njupyter notebook\nIn a new notebook, run:\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nx = np.random.normal(size=100)\nnp.mean(x)\n\nplt.hist(x)\nplt.show()\nIf this runs and shows a histogram, you’re ready."
   },
   {
+    "objectID": "prep-checklist.html",
+    "href": "prep-checklist.html",
+    "title": "Preparatory checklists",
+    "section": "",
+    "text": "Checkout these resources before each lecture to solidify your foundations so that, during the class hour, we can effectively engage in discussion reinterpretations and nuances."
+  },
+  {
+    "objectID": "readings.html",
+    "href": "readings.html",
+    "title": "Readings",
+    "section": "",
+    "text": "Checkout these resources after each lecture to solidify the discussion we had in class.\n\n\n\nWhat is the question?: Mistaking the type of question being considered is the most common error in data analysis\nHow scientists fool themselves - and how they can stop: Seeking ways to fight our own worst instincts\nP values are just the tip of the iceberg: Ridding science of shoddy statistics will require scrutiny of every step, not merely the last one"
+  },
+  {
+    "objectID": "readings.html#01-scientific-method",
+    "href": "readings.html#01-scientific-method",
+    "title": "Readings",
+    "section": "",
+    "text": "What is the question?: Mistaking the type of question being considered is the most common error in data analysis\nHow scientists fool themselves - and how they can stop: Seeking ways to fight our own worst instincts\nP values are just the tip of the iceberg: Ridding science of shoddy statistics will require scrutiny of every step, not merely the last one"
+  },
+  {
     "objectID": "assignments/01-scientific-method_assignment.html",
     "href": "assignments/01-scientific-method_assignment.html",
     "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
@@ -110,20 +131,6 @@
     "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
     "section": "",
     "text": "Task: Match the behavior to the correct fallacy or bias along with a brief (&lt;50-word) reasoning.\n\nBehavior 1: A researcher finds a cluster of cancer cases in a neighborhood and assumes a local factory must be the cause, ignoring that random events naturally cluster.\nBehavior 2: An investigator checks an unexpected result for coding errors but publishes a “significant” result that fits their theory without any additional verification."
-  },
-  {
-    "objectID": "prep-checklist.html",
-    "href": "prep-checklist.html",
-    "title": "Preparatory checklist",
-    "section": "",
-    "text": "Preparatory checklist\nCheckout these resources before each lecture to solidify your foundations so that, during the class hour, we can effectively engage in discussion reinterpretations and nuances.\n ## Scientific method, Critical evaluation, and Cognitive biases\n ## Error and uncertainty estimation\n ## P-values, P-hacking, and Multiple testing\n ## Error types and Statistical power\n ## Pseudoreplication and Confounding\n ## Circular analysis, Regression to the mean, and Sampling biases\n ## Bayesian reasoning\n ## Measuring correlations\n ## High-dimensional data and Machine learning pitfalls\n ## Data visualization and Statistical communication\n ## Reproducible research, Data sharing, and Ethical transparency\n ## AI-assisted data analysis"
-  },
-  {
-    "objectID": "readings.html",
-    "href": "readings.html",
-    "title": "Readings",
-    "section": "",
-    "text": "Readings\nCheckout these resources after each lecture to solidify the discussion we had in class.\n ## Scientific method, Critical evaluation, and Cognitive biases 1. What is the question?: Mistaking the type of question being considered is the most common error in data analysis 2. How scientists fool themselves – and how they can stop: Seeking ways to fight our own worst instincts 3. P values are just the tip of the iceberg: Ridding science of shoddy statistics will require scrutiny of every step, not merely the last one\n ## Error and uncertainty estimation\n ## P-values, P-hacking, and Multiple testing\n ## Error types and Statistical power\n ## Pseudoreplication and Confounding\n ## Circular analysis, Regression to the mean, and Sampling biases\n ## Bayesian reasoning\n ## Measuring correlations\n ## High-dimensional data and Machine learning pitfalls\n ## Data visualization and Statistical communication\n ## Reproducible research, Data sharing, and Ethical transparency\n ## AI-assisted data analysis"
   },
   {
     "objectID": "resources/preparatory-materials.html",
