@@ -1,0 +1,45 @@
+---
+
+## Course readings {#readings}
+
+Checkout these resources _after_ each lecture to solidify the discussion we had in class.
+
+### Week 01: Scientific method, Critical evaluation, and Cognitive biases {#01-scientific-method}
+1. [What is the question?](https://www.science.org/doi/10.1126/science.aaa6146): Mistaking the type of question being considered is the most common error in data analysis
+2. [How scientists fool themselves - and how they can stop](https://www.nature.com/articles/526182a): Seeking ways to fight our own worst instincts
+3. [P values are just the tip of the iceberg](https://www.nature.com/articles/520612a): Ridding science of shoddy statistics will require scrutiny of every step, not merely the last one
+
+
+### Week 02: Error and uncertainty estimation {#02-uncertainty}
+
+
+### Week 03: P-values, P-hacking, and Multiple testing {#03-pvalues}
+
+
+### Week 04: Error types and Statistical power {#04-power}
+
+
+### Week 05: Pseudoreplication and Confounding {#05-pseudoreplication}
+
+
+### Week 06: Circular analysis, Regression to the mean, and Sampling biases {#06-circular-analysis}
+
+
+### Week 07: Bayesian reasoning {#07-bayesian}
+
+
+### Week 08: Measuring correlations {#08-correlation}
+
+
+### Week 09: High-dimensional data and Machine learning pitfalls {#09-highdim-ml}
+
+
+### Week 10: Data visualization and Statistical communication {#10-visualization}
+
+
+### Week 11: Reproducible research, Data sharing, and Ethical transparency {#11-reproducibility}
+
+
+### Week 12: AI-assisted data analysis {#12-ai-assisted}
+
+

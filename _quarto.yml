@@ -19,9 +19,7 @@ website:
         href: index.qmd
       - text: "Textbook"
         href: https://arjunkrish.github.io/rethinking-data-analysis
-      - text: "Resources"
-        href: resources/
-    
+   
     right:
       - icon: github
         href: https://github.com/arjunkrish/rda-2026
