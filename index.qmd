@@ -69,72 +69,72 @@ schedule <- tribble(
   # Week 0
   "0", "Feb 10", "**NO CLASS; WATCH SHARED VIDEO**", 
   paste("Video", "•", link("Setup guide", "resources/software-setup.md")),
-  paste(link("Complete setup", "resources/software-setup.md"), "•", link("Statistical checklist","https://forms.gle/Mxx7BWDWR6pahzJJ8")),
+  paste(link("Complete setup", "resources/software-setup.md"), "•", link("Stat checklist","https://forms.gle/Mxx7BWDWR6pahzJJ8")),
   
   # Week 1
   "1", "Feb 17", "Scientific method, Critical evaluation, and Cognitive biases",
-  paste(link("Slides", "lectures/01-scientific-method/slides.html"), "•", link("Notes", "lectures/01-scientific-method/notes.pdf")),
-  paste(link("HW1", "assignments/hw1/hw1.html"), "•", link("Reading", "readings/week01-readings.md")),
+  paste(link("Prep", "prep-checklist.md#01-scientific-method"), "•", link("Slides", "lectures/01-scientific-method_slides.pdf"), "•", link("Readings", "readings.md#01-scientific-method")),
+  link("Assignment", "assignments/01-scientific-method_assignment.md"),
   
   # Week 2
   "2", "Feb 24", "Error and uncertainty estimation",
-  paste(link("Slides", "lectures/02-uncertainty/slides.html"), "•", link("Notes", "lectures/02-uncertainty/notes.pdf")),
-  paste(link("HW2", "assignments/hw2/hw2.html"), "•", link("Reading", "readings/week02-readings.md")),
+  paste(link("Prep", "prep-checklist.md#02-uncertainty"), "•", link("Slides", "lectures/02-uncertainty_slides.pdf"), "•", link("Readings", "readings.md#02-uncertainty")),
+  link("Assignment", "assignments/02-uncertainty_assignment.md"),
   
   # Week 3
   "3", "Mar 03", "P-values, P-hacking, and Multiple testing",
-  paste(link("Slides", "lectures/03-pvalues/slides.html"), "•", link("Notes", "lectures/03-pvalues/notes.pdf")),
-  paste(link("HW3", "assignments/hw3/hw3.html"), "•", link("Reading", "readings/week03-readings.md")),
+  paste(link("Prep", "prep-checklist.md#03-pvalues"), "•", link("Slides", "lectures/03-pvalues_slides.pdf"), "•", link("Readings", "readings.md#03-pvalues")),
+  link("Assignment", "assignments/03-pvalues_assignment.md"),
   
   # Week 4
   "4", "Mar 10", "Error types and Statistical power",
-  paste(link("Slides", "lectures/04-power/slides.html"), "•", link("Notes", "lectures/04-power/notes.pdf")),
-  paste(link("HW4", "assignments/hw4/hw4.html"), "•", link("Reading", "readings/week04-readings.md")),
+  paste(link("Prep", "prep-checklist.md#04-power"), "•", link("Slides", "lectures/04-power_slides.pdf"), "•", link("Readings", "readings.md#04-power")),
+  link("Assignment", "assignments/04-power_assignment.md"),
   
   # Week 5
   "5", "Mar 17", "Pseudoreplication and Confounding",
-  paste(link("Slides", "lectures/05-pseudoreplication/slides.html"), "•", link("Notes", "lectures/05-pseudoreplication/notes.pdf")),
-  paste(link("HW5", "assignments/hw5/hw5.html"), "•", link("Reading", "readings/week05-readings.md")),
+  paste(link("Prep", "prep-checklist.md#05-pseudoreplication"), "•", link("Slides", "lectures/05-pseudoreplication_slides.pdf"), "•", link("Readings", "readings.md#05-pseudoreplication")),
+  link("Assignment", "assignments/05-pseudoreplication_assignment.md"),
   
   # Week 6
   "6", "Mar 24", "Circular analysis, Regression to the mean, and Sampling biases",
-  paste(link("Slides", "lectures/06-circular-analysis/slides.html"), "•", link("Notes", "lectures/06-circular-analysis/notes.pdf")),
-  paste(link("HW6", "assignments/hw6/hw6.html"), "•", link("Reading", "readings/week06-readings.md")),
+  paste(link("Prep", "prep-checklist.md#06-circular-analysis"), "•", link("Slides", "lectures/06-circular-analysis_slides.pdf"), "•", link("Readings", "readings.md#06-circular-analysis")),
+  link("Assignment", "assignments/06-circular-analysis_assignment.md"),
   
   # Week 7
   "7", "Mar 31", "Bayesian reasoning",
-  paste(link("Slides", "lectures/07-bayesian/slides.html"), "•", link("Notes", "lectures/07-bayesian/notes.pdf")),
-  paste(link("HW7", "assignments/hw7/hw7.html"), "•", link("Reading", "readings/week07-readings.md")),
+  paste(link("Prep", "prep-checklist.md#07-bayesian"), "•", link("Slides", "lectures/07-bayesian_slides.pdf"), "•", link("Readings", "readings.md#07-bayesian")),
+  link("Assignment", "assignments/07-bayesian_assignment.md"),
   
   # Week 8
   "8", "Apr 07", "Measuring correlations",
-  paste(link("Slides", "lectures/08-correlation/slides.html"), "•", link("Notes", "lectures/08-correlation/notes.pdf")),
-  paste(link("HW8", "assignments/hw8/hw8.html"), "•", link("Reading", "readings/week08-readings.md")),
+  paste(link("Prep", "prep-checklist.md#08-correlation"), "•", link("Slides", "lectures/08-correlation_slides.pdf"), "•", link("Readings", "readings.md#08-correlation")),
+  link("Assignment", "assignments/08-correlation_assignment.md"),
   
   # Week 9
   "9", "Apr 14", "High-dimensional data and Machine learning pitfalls",
-  paste(link("Slides", "lectures/09-highdim-ml/slides.html"), "•", link("Notes", "lectures/09-highdim-ml/notes.pdf")),
-  paste(link("HW9", "assignments/hw9/hw9.html"), "•", link("Reading", "readings/week09-readings.md")),
+  paste(link("Prep", "prep-checklist.md#09-highdim-ml"), "•", link("Slides", "lectures/09-highdim-ml_slides.pdf"), "•", link("Readings", "readings.md#09-highdim-ml")),
+  link("Assignment", "assignments/09-highdim-ml_assignment.md"),
   
   # Week 10
   "10", "Apr 21", "Data visualization and Statistical communication",
-  paste(link("Slides", "lectures/10-visualization/slides.html"), "•", link("Notes", "lectures/10-visualization/notes.pdf")),
-  paste(link("HW10", "assignments/hw10/hw10.html"), "•", link("Reading", "readings/weeks10-readings.md")),
+  paste(link("Prep", "prep-checklist.md#10-visualization"), "•", link("Slides", "lectures/10-visualization_slides.pdf"), "•", link("Readings", "readings.md#10-visualization")),
+  link("Assignment", "assignments/10-visualization_assignment.md"),
   
   # Week 11
   "11", "Apr 28", "Reproducible research, Data sharing, and Ethical transparency",
-  paste(link("Slides", "lectures/11-reproducibility/slides.html"), "•", link("Notes", "lectures/11-reproducibility/notes.pdf")),
-  paste(link("HW11", "assignments/hw11/hw11.html"), "•", link("Reading", "readings/weeks11-readings.md")),
+  paste(link("Prep", "prep-checklist.md#11-reproducibility"), "•", link("Slides", "lectures/11-reproducibility_slides.pdf"), "•", link("Readings", "readings.md#11-reproducibility")),
+  link("Assignment", "assignments/11-reproducibility_assignment.md"),
   
   # Week 12
   "12", "May 05", "AI-assisted data analysis",
-  paste(link("Slides", "lectures/12-ai-assisted/slides.html"), "•", link("Notes", "lectures/12-ai-assisted/notes.pdf")),
+  paste(link("Prep", "prep-checklist.md#12-ai-assisted"), "•", link("Slides", "lectures/12-ai-assisted_slides.pdf"), "•", link("Readings", "readings.md#12-ai-assisted")),
   "**Final exam**"
 )
 
 schedule %>%
   kbl(
-    col.names = c("Week", "Date", "Topic", "Learning Materials", "Assignments & Reading"),
+    col.names = c("Week", "Date", "Topic", "Learning materials", "Assignments"),
     format = "html",
     escape = FALSE,
     align = c("c", "l", "l", "l", "l")
@@ -147,9 +147,9 @@ schedule %>%
   ) %>%
   column_spec(1, bold = TRUE, width = "5%") %>%
   column_spec(2, width = "10%") %>%
-  column_spec(3, width = "30%") %>%
-  column_spec(4, width = "25%") %>%
-  column_spec(5, width = "30%") %>%
+  column_spec(3, width = "40%") %>%
+  column_spec(4, width = "30%") %>%
+  column_spec(5, width = "15%") %>%
   row_spec(0, bold = TRUE, background = "#f8f9fa") %>%
   row_spec(c(1, 2), background = "#fff3cd")
 ```
