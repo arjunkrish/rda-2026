@@ -2,43 +2,118 @@
 title: "Preparatory checklists"
 ---
 
-Checkout these resources _before_ each lecture to solidify your foundations so
-that, during the class hour, we can effectively engage in discussion
-reinterpretations and nuances.
+Important note: This course assumes you have already learned basic statistical
+concepts in a traditional way. These preparation checklist contain Stats 101-level
+concepts you should be familiar with before each class. If you need to review
+any of these concepts, consult your introductory statistics textbook or freely
+available online resources before class.
+
+## General prerequisites for the entire course
+### **Basic Statistics Knowledge**
+
+* Descriptive statistics (mean, median, mode, variance, standard deviation)
+* Probability basics
+* Hypothesis testing
+* Confidence intervals
+* Common statistical tests (t-test, ANOVA, chi-square)
+* Correlation and simple linear regression
+
+### **Basic R or Python Skills**
+
+* Reading and writing data files
+* Data manipulation (filtering, summarizing)
+* Basic plotting
+* Running statistical tests
+* Installing packages/libraries
+
+
+## **How to use this guide**
+
+1. **Before each class**: Scan the concepts listed for that week
+2. **Self-check**: Can you define each concept in one sentence?
+3. **Quick review**: If anything is unfamiliar, do a brief refresher
+4. **Come prepared**: Solid foundations will help us effectively engage in
+discussing reinterpretations and nuances
+
 
 ### Week 01: Scientific method, Critical evaluation, and Cognitive biases {#01-scientific-method}
-
+* Scientific method  
+* Null and alternative hypotheses  
+* Experimental vs. observational studies  
+* Randomized controlled trials (RCTs)  
+* Cohort studies  
+* Case-control studies  
+* Cross-sectional studies
 
 ### Week 02: Error and uncertainty estimation {#02-uncertainty}
-
+* Normal distribution  
+* Standard deviation vs. standard error  
+* Confidence intervals  
+* Point estimates  
+* Sampling distributions  
+* Central Limit Theorem
 
 ### Week 03: P-values, P-hacking, and Multiple testing {#03-pvalues}
-
+* P-values  
+* Statistical significance (α \= 0.05)  
+* Null hypothesis significance testing  
+* Type I error (false positive)  
+* Type II error (false negative)
 
 ### Week 04: Error types and Statistical power {#04-power}
-
+* Statistical power  
+* Type I and Type II errors  
+* Effect sizes (Cohen's d, r)  
+* Sample size  
+* Alpha (α) and beta (β)
 
 ### Week 05: Pseudoreplication and Confounding {#05-pseudoreplication}
-
+* Sample size (n)  
+* Independent observations  
+* Correlation  
+* Confounding variables
 
 ### Week 06: Circular analysis, Regression to the mean, and Sampling biases {#06-circular-analysis}
-
+* Training vs. test data  
+* Random sampling  
+* Selection bias  
+* Measurement error
 
 ### Week 07: Bayesian reasoning {#07-bayesian}
-
+* Conditional probability  
+* Bayes' theorem  
+* Sensitivity and specificity  
+* Positive and negative predictive values  
+* Prevalence
 
 ### Week 08: Measuring correlations {#08-correlation}
-
+* Pearson correlation  
+* Scatterplots  
+* Linear regression  
+* R-squared  
+* Residuals
 
 ### Week 09: High-dimensional data and Machine learning pitfalls {#09-highdim-ml}
-
+* Overfitting  
+* Training and test sets  
+* Cross-validation  
+* Model fitting
 
 ### Week 10: Data visualization and Statistical communication {#10-visualization}
-
+* Bar charts  
+* Scatterplots  
+* Histograms  
+* Box plots  
+* Axes and scales
 
 ### Week 11: Reproducible research, Data sharing, and Ethical transparency {#11-reproducibility}
-
+* Research documentation  
+* Data organization  
+* File management  
+* Research ethics basics
 
 ### Week 12: AI-assisted data analysis {#12-ai-assisted}
-
+No specific prerequisites; this is a new topic. Just come with an open mind
+and, if possible, some experience using AI tools like ChatGPT or Claude for
+coding or analysis.
 
