@@ -60,7 +60,7 @@
     "href": "index.html#additional-resources",
     "title": "HMGP 7622: Rethinking Data Analysis",
     "section": "Additional resources",
-    "text": "Additional resources\n\nCompanion textbook: Rethinking Data Analysis: A Practitioner’s Guide to Statistical Wisdom (in development)\nSoftware setup guide: Installation instructions\nStatistical background & coding tutorials: Recommended preparatory materials\nMental health resources: Counseling and Psychological Services (CAPS)\n\n\n\n\n\n\n\n\nNoteCourse materials license\n\n\n\nUnless otherwise noted, all course materials are licensed under CC BY-SA 4.0. You are free to share and adapt them with attribution.\n\n\n\nLast updated: February 19, 2026"
+    "text": "Additional resources\n\nCompanion textbook: Rethinking Data Analysis: A Practitioner’s Guide to Statistical Wisdom (in development)\nSoftware setup guide: Installation instructions\nStatistical background & coding tutorials: Recommended preparatory materials\nMental health resources: Counseling and Psychological Services (CAPS)\n\n\n\n\n\n\n\n\nNoteCourse materials license\n\n\n\nUnless otherwise noted, all course materials are licensed under CC BY-SA 4.0. You are free to share and adapt them with attribution.\n\n\n\nLast updated: February 20, 2026"
   },
   {
     "objectID": "resources/software-setup.html",
@@ -88,7 +88,21 @@
     "href": "prep-checklist.html",
     "title": "Preparatory checklists",
     "section": "",
-    "text": "Checkout these resources before each lecture to solidify your foundations so that, during the class hour, we can effectively engage in discussion reinterpretations and nuances.\n\nWeek 01: Scientific method, Critical evaluation, and Cognitive biases\n\n\nWeek 02: Error and uncertainty estimation\n\n\nWeek 03: P-values, P-hacking, and Multiple testing\n\n\nWeek 04: Error types and Statistical power\n\n\nWeek 05: Pseudoreplication and Confounding\n\n\nWeek 06: Circular analysis, Regression to the mean, and Sampling biases\n\n\nWeek 07: Bayesian reasoning\n\n\nWeek 08: Measuring correlations\n\n\nWeek 09: High-dimensional data and Machine learning pitfalls\n\n\nWeek 10: Data visualization and Statistical communication\n\n\nWeek 11: Reproducible research, Data sharing, and Ethical transparency\n\n\nWeek 12: AI-assisted data analysis"
+    "text": "Important note: This course assumes you have already learned basic statistical concepts in a traditional way. These preparation checklist contain Stats 101-level concepts you should be familiar with before each class. If you need to review any of these concepts, consult your introductory statistics textbook or freely available online resources before class."
+  },
+  {
+    "objectID": "prep-checklist.html#general-prerequisites-for-the-entire-course",
+    "href": "prep-checklist.html#general-prerequisites-for-the-entire-course",
+    "title": "Preparatory checklists",
+    "section": "General prerequisites for the entire course",
+    "text": "General prerequisites for the entire course\n\nBasic Statistics Knowledge\n\nDescriptive statistics (mean, median, mode, variance, standard deviation)\nProbability basics\nHypothesis testing\nConfidence intervals\nCommon statistical tests (t-test, ANOVA, chi-square)\nCorrelation and simple linear regression\n\n\n\nBasic R or Python Skills\n\nReading and writing data files\nData manipulation (filtering, summarizing)\nBasic plotting\nRunning statistical tests\nInstalling packages/libraries"
+  },
+  {
+    "objectID": "prep-checklist.html#how-to-use-this-guide",
+    "href": "prep-checklist.html#how-to-use-this-guide",
+    "title": "Preparatory checklists",
+    "section": "How to use this guide",
+    "text": "How to use this guide\n\nBefore each class: Scan the concepts listed for that week\nSelf-check: Can you define each concept in one sentence?\nQuick review: If anything is unfamiliar, do a brief refresher\nCome prepared: Solid foundations will help us effectively engage in discussing reinterpretations and nuances\n\n\nWeek 01: Scientific method, Critical evaluation, and Cognitive biases\n\nScientific method\n\nNull and alternative hypotheses\n\nExperimental vs. observational studies\n\nRandomized controlled trials (RCTs)\n\nCohort studies\n\nCase-control studies\n\nCross-sectional studies\n\n\n\nWeek 02: Error and uncertainty estimation\n\nNormal distribution\n\nStandard deviation vs. standard error\n\nConfidence intervals\n\nPoint estimates\n\nSampling distributions\n\nCentral Limit Theorem\n\n\n\nWeek 03: P-values, P-hacking, and Multiple testing\n\nP-values\n\nStatistical significance (α = 0.05)\n\nNull hypothesis significance testing\n\nType I error (false positive)\n\nType II error (false negative)\n\n\n\nWeek 04: Error types and Statistical power\n\nStatistical power\n\nType I and Type II errors\n\nEffect sizes (Cohen’s d, r)\n\nSample size\n\nAlpha (α) and beta (β)\n\n\n\nWeek 05: Pseudoreplication and Confounding\n\nSample size (n)\n\nIndependent observations\n\nCorrelation\n\nConfounding variables\n\n\n\nWeek 06: Circular analysis, Regression to the mean, and Sampling biases\n\nTraining vs. test data\n\nRandom sampling\n\nSelection bias\n\nMeasurement error\n\n\n\nWeek 07: Bayesian reasoning\n\nConditional probability\n\nBayes’ theorem\n\nSensitivity and specificity\n\nPositive and negative predictive values\n\nPrevalence\n\n\n\nWeek 08: Measuring correlations\n\nPearson correlation\n\nScatterplots\n\nLinear regression\n\nR-squared\n\nResiduals\n\n\n\nWeek 09: High-dimensional data and Machine learning pitfalls\n\nOverfitting\n\nTraining and test sets\n\nCross-validation\n\nModel fitting\n\n\n\nWeek 10: Data visualization and Statistical communication\n\nBar charts\n\nScatterplots\n\nHistograms\n\nBox plots\n\nAxes and scales\n\n\n\nWeek 11: Reproducible research, Data sharing, and Ethical transparency\n\nResearch documentation\n\nData organization\n\nFile management\n\nResearch ethics basics\n\n\n\nWeek 12: AI-assisted data analysis\nNo specific prerequisites; this is a new topic. Just come with an open mind and, if possible, some experience using AI tools like ChatGPT or Claude for coding or analysis."
   },
   {
     "objectID": "readings.html",
