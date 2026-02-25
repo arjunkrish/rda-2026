@@ -11,7 +11,9 @@ Checkout these resources _after_ each lecture to solidify the discussion we had 
 
 
 ### Week 02: Error and uncertainty estimation {#02-uncertainty}
-
+1. [Importance of being uncertain](https://www.nature.com/articles/nmeth.2613): Statistics does not tell us whether we are right. It tells us the chances of being wrong.
+2. [Error bars](https://www.nature.com/articles/nmeth.2659): The meaning of error bars is often misinterpreted, as is the statistical significance of their overlap.
+3. [Communicating uncertainty about facts, numbers and science](https://royalsocietypublishing.org/rsos/article/6/5/181870/95102/Communicating-uncertainty-about-facts-numbers-and)
 
 ### Week 03: P-values, P-hacking, and Multiple testing {#03-pvalues}
 
