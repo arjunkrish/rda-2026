@@ -60,7 +60,7 @@
     "href": "index.html#additional-resources",
     "title": "HMGP 7622: Rethinking Data Analysis",
     "section": "Additional resources",
-    "text": "Additional resources\n\nCompanion textbook: Rethinking Data Analysis: A Practitioner’s Guide to Statistical Wisdom (in development)\nSoftware setup guide: Installation instructions\nStatistical background & coding tutorials: Recommended preparatory materials\nMental health resources: Counseling and Psychological Services (CAPS)\n\n\n\n\n\n\n\n\nNoteCourse materials license\n\n\n\nUnless otherwise noted, all course materials are licensed under CC BY-SA 4.0. You are free to share and adapt them with attribution.\n\n\n\nLast updated: February 24, 2026"
+    "text": "Additional resources\n\nCompanion textbook: Rethinking Data Analysis: A Practitioner’s Guide to Statistical Wisdom (in development)\nSoftware setup guide: Installation instructions\nStatistical background & coding tutorials: Recommended preparatory materials\nMental health resources: Counseling and Psychological Services (CAPS)\n\n\n\n\n\n\n\n\nNoteCourse materials license\n\n\n\nUnless otherwise noted, all course materials are licensed under CC BY-SA 4.0. You are free to share and adapt them with attribution.\n\n\n\nLast updated: March 03, 2026"
   },
   {
     "objectID": "resources/software-setup.html",
@@ -84,11 +84,39 @@
     "text": "Download Anaconda (Individual Edition) from: https://www.anaconda.com/products/distribution\nThis installs:\n\nPython\nJupyter Notebook\nCore scientific libraries\n\nFollow installation instructions for your OS.\n\n\n\n\nOpen Anaconda Prompt (or terminal) and run:\nconda create -n stats_course python=3.11\nconda activate stats_course\nconda install numpy pandas matplotlib seaborn scipy jupyter\n\n\n\n\nWe will use:\n\nnumpy → arrays, random numbers, simulations\npandas → data wrangling\nmatplotlib → plotting\nseaborn → statistical visualization\nscipy → statistical tests\n\nPython built-ins already support:\n\nfor / while loops\nbasic math\nrandom via numpy.random\n\n\n\n\n\nStart Jupyter:\njupyter notebook\nIn a new notebook, run:\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nx = np.random.normal(size=100)\nnp.mean(x)\n\nplt.hist(x)\nplt.show()\nIf this runs and shows a histogram, you’re ready."
   },
   {
-    "objectID": "assignments/02-uncertainty_inclass.html",
-    "href": "assignments/02-uncertainty_inclass.html",
-    "title": "Variance, error, and uncertainty | Week 02 In-class assignment",
+    "objectID": "assignments/01-scientific-method_homework.html",
+    "href": "assignments/01-scientific-method_homework.html",
+    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
     "section": "",
-    "text": "Variance, error, and uncertainty | Week 02 In-class assignment\nThis assignment is designed to help you to execute and understand three ways to estimate the standard error of the mean.\nThis prewritten script illustrates three approaches to the standard error of the mean:\n\nPart 1 — Formula-based SEM from a single sample\nPart 2 — Empirical SEM via repeated sampling from a known population\nPart 3 — Bootstrap SEM from a single sample (no population needed)\n\nHere’s what to do:\n\nDownload the R script or Python script\nLoad it into your favorite IDE\nWork with a partner to go through the code, discuss the logic in detail, and add detailed comments along the way\nFinally, run the code part-by-part and discuss the results."
+    "text": "This assignment is designed to help you recognize cognitive biases, evaluate statistical claims, and identify common pitfalls in study design.\nWrite your answers in a separate text docuent, convert to PDF, and submit using this form.\n\n\nTask: Read the following descriptions and classify them as “Exploratory” or “Confirmatory” along with a brief (&lt;50-word) reasoning.\n\nScenario A: A researcher analyzes a large dataset of dietary habits and finds that people who eat more blueberries have a lower risk of stroke; they then publish these results as a primary finding.\nScenario B: A scientist publishes a time-stamped plan on the Open Science Framework (OSF) detailing the exact primary endpoint and statistical model they will use for a drug trial before any patients are recruited.\nScenario C: An investigator explores various ways to transform data (e.g., log-transformations, squaring variables) until a p-value falls below 0.05.\n\n\n\n\nTask: Identify the “Red Flags” in the following research summaries along with a brief (&lt;50-word) reasoning.\n\nAbstract 1: “A study of 12 women showed that a new herbal supplement improved digestion parameters by 30%. No side effects were reported, and we conclude this is an effective GI issue treatment.”\nAbstract 2: “Our prospective cohort study found that daily meditation leads to a 15% reduction in heart disease. We recommend mandatory meditation programs in workplaces.”\n\n\n\n\nTask: Match the behavior to the correct fallacy or bias along with a brief (&lt;50-word) reasoning.\n\nBehavior 1: A researcher finds a cluster of cancer cases in a neighborhood and assumes a local factory must be the cause, ignoring that random events naturally cluster.\nBehavior 2: An investigator checks an unexpected result for coding errors but publishes a “significant” result that fits their theory without any additional verification."
+  },
+  {
+    "objectID": "assignments/01-scientific-method_homework.html#distinguishing-research-types-exploratory-vs.-confirmatory",
+    "href": "assignments/01-scientific-method_homework.html#distinguishing-research-types-exploratory-vs.-confirmatory",
+    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
+    "section": "",
+    "text": "Task: Read the following descriptions and classify them as “Exploratory” or “Confirmatory” along with a brief (&lt;50-word) reasoning.\n\nScenario A: A researcher analyzes a large dataset of dietary habits and finds that people who eat more blueberries have a lower risk of stroke; they then publish these results as a primary finding.\nScenario B: A scientist publishes a time-stamped plan on the Open Science Framework (OSF) detailing the exact primary endpoint and statistical model they will use for a drug trial before any patients are recruited.\nScenario C: An investigator explores various ways to transform data (e.g., log-transformations, squaring variables) until a p-value falls below 0.05."
+  },
+  {
+    "objectID": "assignments/01-scientific-method_homework.html#abstract-autopsy-identifying-red-flags",
+    "href": "assignments/01-scientific-method_homework.html#abstract-autopsy-identifying-red-flags",
+    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
+    "section": "",
+    "text": "Task: Identify the “Red Flags” in the following research summaries along with a brief (&lt;50-word) reasoning.\n\nAbstract 1: “A study of 12 women showed that a new herbal supplement improved digestion parameters by 30%. No side effects were reported, and we conclude this is an effective GI issue treatment.”\nAbstract 2: “Our prospective cohort study found that daily meditation leads to a 15% reduction in heart disease. We recommend mandatory meditation programs in workplaces.”"
+  },
+  {
+    "objectID": "assignments/01-scientific-method_homework.html#identifying-cognitive-biases",
+    "href": "assignments/01-scientific-method_homework.html#identifying-cognitive-biases",
+    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
+    "section": "",
+    "text": "Task: Match the behavior to the correct fallacy or bias along with a brief (&lt;50-word) reasoning.\n\nBehavior 1: A researcher finds a cluster of cancer cases in a neighborhood and assumes a local factory must be the cause, ignoring that random events naturally cluster.\nBehavior 2: An investigator checks an unexpected result for coding errors but publishes a “significant” result that fits their theory without any additional verification."
+  },
+  {
+    "objectID": "assignments/03-pvalues_homework.html",
+    "href": "assignments/03-pvalues_homework.html",
+    "title": "P-values | Week 03 Homework assignment",
+    "section": "",
+    "text": "P-values | Week 03 Homework assignment\nThis assignment builds on the permutation test from the in-class activity and asks you to explore two additional ideas: how the properties of your data determine the p-value you get, and how p-hacking works in practice.\nDownload the R notebook or Python notebook, annotate the code, run it, and answer the questions embedded in the notebook as well as the questions below. Submit your completed notebook as a PDF using this form.\n\n\nReflecting on the in-class permutation test\n\nIn your own words, write a general definition of a p-value — one that is not tied to any specific test or dataset.\nThe permutation test and the Welch t-test gave similar p-values. Now suppose the data contained one very large outlier in group 2. Which method would you trust more, and why?\n\n\n\n\nPart 2 — Effect of effect size, variance, and sample size\n\nLook at the three-panel figure you produced. Describe the “boundary” between significant (red) and non-significant (blue) points. How does that boundary shift as you move from the left panel (SD = 0.5) to the right panel (SD = 2)?\nA researcher runs a study and gets p = 0.06. They argue that with a larger sample size the result would surely become significant, and therefore the effect is real. Is this reasoning valid? Use what you observed in Part 2 to support your answer.\n\n\n\n\nPart 3 — P-hacking\n\nThe simulation in Part 3 always finds p &lt; 0.05 eventually, even though the data come from a single population with no real group difference. How many attempts did it take in your run? What does this tell you about the 0.05 threshold when testing is repeated?\nDescribe one real-world practice in data analysis or experimental design that is structurally equivalent to what the while-loop in Part 3 is doing. Explain the analogy clearly."
   },
   {
     "objectID": "prep-checklist.html",
@@ -126,32 +154,18 @@
     "text": "Variance, error, and uncertainty | Week 02 Homework assignment\nThis assignment is designed to help you to understand ways to estimate and report variation around an estimate.\nWrite your answers in a separate text docuent (include the figures you generate), convert to PDF, and submit using this form.\n\nWhich error bar is almost always the best to use around the mean? Explain.\nRead the definition of the Central Limit Theorem from a textbook or Wikipedia, close the source, and write the definition in your own words. Then, point out the piece of code and the result in the in-class assignment that supports this theorem.\nExplain the qualitative difference between Parts 1, 2, and 3 in the in-class assignment. What’s changing from 1-to-2 and 2-to-3 in terms of reflecting practical data collection and analysis scenarios?\nBuild on Part 3 of the in-class assignment to write code to calculate the 95% confidence interval. Write detailed documentation for each step to explain the logic.\nWhy do think the prediction interval is larger than the confidence interval. Explain in your own words. Next, how could we use bootstrapping to calculate the prediction interval?"
   },
   {
-    "objectID": "assignments/01-scientific-method_homework.html",
-    "href": "assignments/01-scientific-method_homework.html",
-    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
+    "objectID": "assignments/02-uncertainty_inclass.html",
+    "href": "assignments/02-uncertainty_inclass.html",
+    "title": "Variance, error, and uncertainty | Week 02 In-class assignment",
     "section": "",
-    "text": "This assignment is designed to help you recognize cognitive biases, evaluate statistical claims, and identify common pitfalls in study design.\nWrite your answers in a separate text docuent, convert to PDF, and submit using this form.\n\n\nTask: Read the following descriptions and classify them as “Exploratory” or “Confirmatory” along with a brief (&lt;50-word) reasoning.\n\nScenario A: A researcher analyzes a large dataset of dietary habits and finds that people who eat more blueberries have a lower risk of stroke; they then publish these results as a primary finding.\nScenario B: A scientist publishes a time-stamped plan on the Open Science Framework (OSF) detailing the exact primary endpoint and statistical model they will use for a drug trial before any patients are recruited.\nScenario C: An investigator explores various ways to transform data (e.g., log-transformations, squaring variables) until a p-value falls below 0.05.\n\n\n\n\nTask: Identify the “Red Flags” in the following research summaries along with a brief (&lt;50-word) reasoning.\n\nAbstract 1: “A study of 12 women showed that a new herbal supplement improved digestion parameters by 30%. No side effects were reported, and we conclude this is an effective GI issue treatment.”\nAbstract 2: “Our prospective cohort study found that daily meditation leads to a 15% reduction in heart disease. We recommend mandatory meditation programs in workplaces.”\n\n\n\n\nTask: Match the behavior to the correct fallacy or bias along with a brief (&lt;50-word) reasoning.\n\nBehavior 1: A researcher finds a cluster of cancer cases in a neighborhood and assumes a local factory must be the cause, ignoring that random events naturally cluster.\nBehavior 2: An investigator checks an unexpected result for coding errors but publishes a “significant” result that fits their theory without any additional verification."
+    "text": "Variance, error, and uncertainty | Week 02 In-class assignment\nThis assignment is designed to help you to execute and understand three ways to estimate the standard error of the mean.\nThis prewritten script illustrates three approaches to the standard error of the mean:\n\nPart 1 — Formula-based SEM from a single sample\nPart 2 — Empirical SEM via repeated sampling from a known population\nPart 3 — Bootstrap SEM from a single sample (no population needed)\n\nHere’s what to do:\n\nDownload the R script or Python script\nLoad it into your favorite IDE\nWork with a partner to go through the code, discuss the logic in detail, and add detailed comments along the way\nFinally, run the code part-by-part and discuss the results."
   },
   {
-    "objectID": "assignments/01-scientific-method_homework.html#distinguishing-research-types-exploratory-vs.-confirmatory",
-    "href": "assignments/01-scientific-method_homework.html#distinguishing-research-types-exploratory-vs.-confirmatory",
-    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
+    "objectID": "assignments/03-pvalues_inclass.html",
+    "href": "assignments/03-pvalues_inclass.html",
+    "title": "P-values | Week 03 In-class assignment",
     "section": "",
-    "text": "Task: Read the following descriptions and classify them as “Exploratory” or “Confirmatory” along with a brief (&lt;50-word) reasoning.\n\nScenario A: A researcher analyzes a large dataset of dietary habits and finds that people who eat more blueberries have a lower risk of stroke; they then publish these results as a primary finding.\nScenario B: A scientist publishes a time-stamped plan on the Open Science Framework (OSF) detailing the exact primary endpoint and statistical model they will use for a drug trial before any patients are recruited.\nScenario C: An investigator explores various ways to transform data (e.g., log-transformations, squaring variables) until a p-value falls below 0.05."
-  },
-  {
-    "objectID": "assignments/01-scientific-method_homework.html#abstract-autopsy-identifying-red-flags",
-    "href": "assignments/01-scientific-method_homework.html#abstract-autopsy-identifying-red-flags",
-    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
-    "section": "",
-    "text": "Task: Identify the “Red Flags” in the following research summaries along with a brief (&lt;50-word) reasoning.\n\nAbstract 1: “A study of 12 women showed that a new herbal supplement improved digestion parameters by 30%. No side effects were reported, and we conclude this is an effective GI issue treatment.”\nAbstract 2: “Our prospective cohort study found that daily meditation leads to a 15% reduction in heart disease. We recommend mandatory meditation programs in workplaces.”"
-  },
-  {
-    "objectID": "assignments/01-scientific-method_homework.html#identifying-cognitive-biases",
-    "href": "assignments/01-scientific-method_homework.html#identifying-cognitive-biases",
-    "title": "Scientific method, Critical evaluation, and Cognitive biases | Week 01 Assignment",
-    "section": "",
-    "text": "Task: Match the behavior to the correct fallacy or bias along with a brief (&lt;50-word) reasoning.\n\nBehavior 1: A researcher finds a cluster of cancer cases in a neighborhood and assumes a local factory must be the cause, ignoring that random events naturally cluster.\nBehavior 2: An investigator checks an unexpected result for coding errors but publishes a “significant” result that fits their theory without any additional verification."
+    "text": "P-values | Week 03 In-class assignment\nThis assignment is designed to help you build a hands-on, ground-up understanding of p-values by implementing a permutation test from scratch — computing a p-value without invoking any formula or distributional assumption.\nThe notebook walks through a step-by-step permutation test on a simulated clinical trial (placebo vs. drug), and ends by comparing the result to what a standard t-test gives.\nHere’s what to do:\n\nDownload the R notebook or Python notebook\nWork with a partner to go through the code step by step — for each block, discuss what it’s doing before moving on\nAdd detailed comments at every step explaining both what the code does and what it means statistically — annotate as if writing for someone who has never heard of a permutation test\nRun the code block by block and talk through the output at each stage\nAnswer the two questions at the end of the notebook"
   },
   {
     "objectID": "resources/preparatory-materials.html",
