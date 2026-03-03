@@ -1,0 +1,208 @@
+---
+title: "Assignment 03 — In-Class: Calculating P-values Using a Permutation Test"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+> **In-class activity.** Complete this notebook during class and submit it before you leave.
+> Add your comments and answers in the spaces marked with *[ Write your answer here. ]*
+
+---
+
+# Part 1 — Calculating a P-value Using a Permutation Test
+
+> **Scenario:** A small clinical trial enrolled 40 patients. Twenty received a placebo
+> (group 1, control) and twenty received a new drug (group 2, treatment). Each value
+> represents that patient's change in symptom score. Higher scores mean worse symptoms.
+
+---
+
+## Step 0 — How the data were generated (reference only)
+
+```{r step-0-data-generation, eval=FALSE}
+### Reference only — do not run ###
+
+# effect_size <- 0.25
+# stddev      <- 0.5
+# sample_size <- 20
+#
+# group1 <- round(rnorm(sample_size, mean = 0,           sd = stddev) * 10)
+# group2 <- round(rnorm(sample_size, mean = effect_size, sd = stddev) * 10)
+#
+# print(group1)
+# print(group2)
+```
+
+---
+
+## Step 1 — Enter and inspect the data
+
+```{r step-1-data}
+# Define the two groups
+
+group1 <- c( 0,  5,  2, -2,  8,
+            -6,  0,  0, -6, -3,
+            -7,  4, -2, -2,  0,
+            -4, -1, -8,  0,  6)
+
+group2 <- c(-2,  2, -2, -5,  7,
+            11,  6,  2,  1,  1,
+             6, -2, -1,  7,  7,
+            -2,  4,  3, -1, 17)
+
+sample_size <- length(group1)
+
+cat("Group 1 (control)  — mean:", round(mean(group1), 2),
+    " | sd:", round(sd(group1), 2), "\n")
+cat("Group 2 (treatment)— mean:", round(mean(group2), 2),
+    " | sd:", round(sd(group2), 2), "\n")
+```
+
+*[ Add your notes here. ]*
+
+---
+
+## Step 2 — Visualize the two distributions
+
+```{r step-2-histograms}
+# Overlapping histograms of the two groups
+# rgb(r, g, b, alpha), add = TRUE, abline(v = ...)
+
+hist(group1,
+     col    = rgb(0, 0, 1, 0.25),
+     breaks = seq(-20, 20, 2.5),
+     xlim   = c(-20, 20),
+     xlab   = "Change in symptom score",
+     main   = "Symptom score distributions: control (blue) vs. treatment (red)")
+
+hist(group2,
+     col    = rgb(1, 0, 0, 0.25),
+     breaks = seq(-20, 20, 2.5),
+     add    = TRUE)
+
+abline(v = mean(group1), col = "blue", lwd = 2)
+abline(v = mean(group2), col = "red",  lwd = 2)
+
+legend("topright",
+       legend = c("Group 1 (control)", "Group 2 (treatment)"),
+       fill   = c(rgb(0, 0, 1, 0.4), rgb(1, 0, 0, 0.4)),
+       bty    = "n")
+```
+
+*[ Add your notes here. ]*
+
+---
+
+## Step 3 — Compute the observed test statistic
+
+```{r step-3-test-statistic}
+# Compute signal / noise (the test statistic)
+
+signal <- mean(group2) - mean(group1)
+noise  <- sqrt((var(group2) / sample_size) + (var(group1) / sample_size))
+
+test_statistic <- signal / noise
+
+cat("Signal (difference in means):", round(signal,         4), "\n")
+cat("Noise  (SE of the difference):", round(noise,          4), "\n")
+cat("Observed test statistic:      ", round(test_statistic, 4), "\n")
+```
+
+*[ Add your notes here. ]*
+
+---
+
+## Step 4 — Set up the permutation test
+
+```{r step-4-setup}
+# Set up containers for the permutation test
+
+num_permutations         <- 10000
+permuted_test_statistics <- numeric(num_permutations)
+```
+
+---
+
+## Step 5 — Run the permutation loop
+
+```{r step-5-permutation-loop}
+# Permutation loop: shuffle the combined data, re-split, compute the test statistic
+
+for (i in 1:num_permutations) {
+
+  permuted_data <- sample(c(group1, group2))
+
+  rand_group1 <- permuted_data[1:sample_size]
+  rand_group2 <- permuted_data[(sample_size + 1):(2 * sample_size)]
+
+  perm_signal <- mean(rand_group2) - mean(rand_group1)
+  perm_noise  <- sqrt((var(rand_group2) / sample_size) + (var(rand_group1) / sample_size))
+
+  permuted_test_statistics[i] <- perm_signal / perm_noise
+}
+```
+
+*[ Add your notes here. ]*
+
+---
+
+## Step 6 — Visualize the null distribution
+
+```{r step-6-null-distribution}
+# Histogram of the null distribution; red dashed line = observed test statistic
+
+hist(permuted_test_statistics,
+     breaks = 60,
+     col    = "lightsteelblue",
+     border = "white",
+     xlab   = "Test statistic under H0 (null distribution)",
+     main   = "Null distribution from 10,000 permutations\n(dashed red = observed value)")
+
+abline(v = test_statistic, col = "red", lwd = 2, lty = 2)
+```
+
+*[ Add your notes here. ]*
+
+---
+
+## Step 7 — Compute the permutation p-value
+
+```{r step-7-pvalue}
+# Compute the p-value as the fraction of permuted statistics >= observed
+
+pvalue <- sum(permuted_test_statistics >= test_statistic) / num_permutations
+cat("Permutation p-value:", pvalue, "\n")
+```
+
+*[ Add your notes here. ]*
+
+---
+
+## Step 8 — Compare to the parametric t-test
+
+```{r step-8-ttest}
+# Welch two-sample t-test for comparison
+
+t.test(group2, group1, alternative = "greater")
+```
+
+---
+
+## Questions
+
+**Question 1:**
+Using the language of this specific experiment (placebo vs. drug, symptom scores),
+write a precise one-sentence definition of the permutation p-value you calculated.
+
+*[ Write your answer here. ]*
+
+---
+
+**Question 2:**
+Is the permutation p-value close to the t-test p-value? What does agreement
+(or disagreement) between the two methods tell you?
+
+*[ Write your answer here. ]*
