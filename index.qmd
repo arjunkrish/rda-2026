@@ -84,7 +84,7 @@ schedule <- tribble(
   # Week 3
   "3", "Mar 03", "P-values, P-hacking, and Multiple testing",
   paste(link("Prep", "prep-checklist.qmd#03-pvalues"), "•", link("Slides", "lectures/03-pvalues_slides.pdf"), "•", link("Readings", "readings.qmd#03-pvalues")),
-  link("Homework", "assignments/03-pvalues_homework.md"),
+  paste(link("In-class", "assignments/03-pvalues_inclass.md"), "•",link("Homework", "assignments/03-pvalues_homework.md")),
   
   # Week 4
   "4", "Mar 10", "Error types and Statistical power",
