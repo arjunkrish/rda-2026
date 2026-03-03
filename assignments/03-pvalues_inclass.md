@@ -10,8 +10,8 @@ standard t-test gives.
 
 Here's what to do:
 
-1. Download the [R notebook](./03-pvalues_inclass_student.Rmd) or
-   [Python notebook](./03-pvalues_inclass_student.ipynb)
+1. Download the [R notebook](./03-pvalues_inclass.Rmd) or
+   [Python notebook](./03-pvalues_inclass.ipynb)
 2. Work with a partner to go through the code step by step — for each block,
    discuss what it's doing before moving on
 3. Add detailed comments at every step explaining both *what* the code does and
