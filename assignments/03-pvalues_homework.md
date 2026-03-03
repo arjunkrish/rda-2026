@@ -4,8 +4,8 @@ This assignment builds on the permutation test from the in-class activity and
 asks you to explore two additional ideas: how the properties of your data
 determine the p-value you get, and how p-hacking works in practice.
 
-Download the [R notebook](./03-pvalues_homework.Rmd) or
-[Python notebook](./03-pvalues_homework.ipynb), annotate the code,
+Download the [R notebook](./03-pvalues_homework.R) or
+[Python notebook](./03-pvalues_homework.py), annotate the code,
 run it, and answer the questions embedded in the notebook as well as the
 questions below. Submit your completed notebook as a PDF using
 [this form](https://forms.gle/977e4vrVshwTyTcK7).

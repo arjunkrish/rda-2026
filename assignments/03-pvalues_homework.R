@@ -1,36 +1,24 @@
----
-title: "Assignment 03 — Homework: Effect Size, Variance, Sample Size & P-hacking"
-output:
-  html_document:
-    df_print: paged
-    toc: true
-    toc_float: true
----
+# ─────────────────────────────────────────────────────────────────────────────
+# Assignment 03 — Homework: Effect Size, Variance, Sample Size & P-hacking
+#
+# Homework. Annotate this script, run it, and answer the questions embedded
+# below. Add your notes in the spaces marked [ Add your notes here ].
+# ─────────────────────────────────────────────────────────────────────────────
 
-> **Homework.** Due before next class. Submit this completed R Notebook via the course assignment form.
-> Add your comments and answers in the spaces marked with *[ Write your answer here. ]*
 
----
+# ── Part 2: Effect of Effect Size, Variance, and Sample Size on P-values ─────
+#
+# Apart from the null hypothesis, the p-value depends on:
+#   1. Effect size, 2. Sample size, and 3. Variance within each group.
+#
+# The code below simulates two groups for every combination of these three
+# factors and runs a t-test for each.
 
-# Part 2 — Effect of Effect Size, Variance, and Sample Size on P-values
-
-Apart from the null hypothesis, the p-value of a statistical test depends on:
-1. **Effect size**, 2. **Sample size**, and 3. **Variance within each group**.
-
-The code below simulates two groups for every combination of these three factors
-and runs a t-test for each, so we can see their joint influence on p-values.
-
----
-
-```{r setup, message=FALSE, warning=FALSE}
 library(tidyverse)
-```
 
-*[ Add your notes here. ]*
+# [ Add your notes here. ]
 
----
 
-```{r part2-simulation}
 # Nested simulation: for each combination of effect_size, std_deviation,
 # and sample_size, simulate two groups and record the t-test p-value.
 
@@ -64,27 +52,19 @@ for (effect_size in effect_sizes) {
 }
 
 es_sd_ss_pvalue <- as_tibble(do.call(rbind, results_list))
-es_sd_ss_pvalue
-```
+print(es_sd_ss_pvalue)
 
-*[ Add your notes here. ]*
+# [ Add your notes here. ]
 
----
 
-```{r part2-threshold}
 # Add a column flagging whether p < 0.05
 
 es_sd_ss_pvalue <- es_sd_ss_pvalue |>
   mutate(pvalue_below_thresh = pvalue < 0.05)
 
-es_sd_ss_pvalue
-```
+# [ Add your notes here. ]
 
-*[ Add your notes here. ]*
 
----
-
-```{r part2-plot, fig.width=12, fig.height=5}
 # Three-panel plot: one panel per std_deviation value.
 # x-axis: sample_size (log scale); y-axis: effect_size;
 # color/shape: whether p < 0.05 (red circle) or not (blue cross).
@@ -121,7 +101,7 @@ plot_es_sd_ss_pvalue <- es_sd_ss_pvalue |>
   theme_bw(base_size = 12) +
   theme(legend.position = "bottom")
 
-plot_es_sd_ss_pvalue
+print(plot_es_sd_ss_pvalue)
 
 ggsave(
   filename = "effectsize_variance_samplesize_pvalue.pdf",
@@ -129,26 +109,21 @@ ggsave(
   width    = 12,
   height   = 5
 )
-```
 
----
 
-**Question:**
-Examine the figure and write a short paragraph about your observations on how
-effect size, sample size, and within-group variance each influence the p-value.
+# Question (Part 2):
+# Examine the figure and write a short paragraph about your observations on how
+# effect size, sample size, and within-group variance each influence the p-value.
+#
+# [ Write your answer here. ]
 
-*[ Write your answer here. ]*
 
----
+# ── Part 3: P-hacking ────────────────────────────────────────────────────────
+#
+# P-hacking is the practice of collecting or selecting data or statistical
+# analyses until nonsignificant results become significant.
 
-# Part 3 — P-hacking
 
-P-hacking is the practice of collecting or selecting data or statistical analyses
-until nonsignificant results become significant.
-
----
-
-```{r part3-generate-data}
 # Generate a null dataset: 200 observations from a single Normal(0, 1) distribution
 
 set.seed(42)
@@ -160,22 +135,15 @@ hist(data,
      border = "white",
      xlab   = "Value",
      main   = "200 observations from a single Normal(0, 1) distribution")
-```
 
-*[ Add your notes here. ]*
+# [ Add your notes here. ]
 
----
 
-```{r part3-init}
 # Initialise counters
-
 attempts <- 0
 pvalue   <- 1
-```
 
----
 
-```{r part3-phacking-loop}
 # Keep splitting the data randomly into two groups until p < 0.05
 
 all_indices <- seq_along(data)
@@ -196,13 +164,11 @@ cat(sprintf(
   "\"Significant\" result found! p = %.4f after %d attempt(s).\n",
   pvalue, attempts
 ))
-```
 
-*[ Add your notes here. ]*
+# [ Add your notes here. ]
 
----
 
-**Question:**
-What does this coding exercise have to do with p-hacking?
-
-*[ Write your answer here. ]*
+# Question (Part 3):
+# What does this coding exercise have to do with p-hacking?
+#
+# [ Write your answer here. ]
