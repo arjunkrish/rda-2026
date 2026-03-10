@@ -15,7 +15,7 @@ range of bias strengths:
 
 Here's what to do:
 
-1. Download the [R script](./04-power_inclass_student.R) or [Python script](./04-power_inclass_student.py)
+1. Download the [R script](./04-power_inclass.R) or [Python script](./04-power_inclass.py)
 2. Load it into your favorite IDE
 3. Work with a partner to go through the code, discuss the logic in detail, and add detailed comments along the way
 4. Run the code step-by-step and discuss the results at each stage
