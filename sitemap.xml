@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/index.html</loc>
-    <lastmod>2026-03-03T20:50:42.774Z</lastmod>
+    <lastmod>2026-03-10T19:54:35.790Z</lastmod>
   </url>
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/resources/software-setup.html</loc>
@@ -11,6 +11,10 @@
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/assignments/01-scientific-method_homework.html</loc>
     <lastmod>2026-02-19T14:44:37.089Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjunkrish.github.io/rda-2026/assignments/04-power_homework.html</loc>
+    <lastmod>2026-03-10T19:53:32.119Z</lastmod>
   </url>
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/assignments/03-pvalues_homework.html</loc>
@@ -31,6 +35,10 @@
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/assignments/02-uncertainty_inclass.html</loc>
     <lastmod>2026-02-24T20:14:03.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjunkrish.github.io/rda-2026/assignments/04-power_inclass.html</loc>
+    <lastmod>2026-03-10T19:53:32.122Z</lastmod>
   </url>
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/assignments/03-pvalues_inclass.html</loc>
