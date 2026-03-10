@@ -89,7 +89,7 @@ schedule <- tribble(
   # Week 4
   "4", "Mar 10", "Error types and Statistical power",
   paste(link("Prep", "prep-checklist.qmd#04-power"), "•", link("Slides", "lectures/04-power_slides.pdf"), "•", link("Readings", "readings.qmd#04-power")),
-  link("Homework", "assignments/04-power_homework.md"),
+  paste(link("In-class", "assignments/04-power_inclass.md"), "•",link("Homework", "assignments/04-power_homework.md")),
   
   # Week 5
   "5", "Mar 17", "Pseudoreplication and Confounding",
