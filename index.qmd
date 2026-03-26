@@ -91,45 +91,47 @@ schedule <- tribble(
   paste(link("Prep", "prep-checklist.qmd#04-power"), "•", link("Slides", "lectures/04-power_slides.pdf"), "•", link("Readings", "readings.qmd#04-power")),
   paste(link("In-class", "assignments/04-power_inclass.md"), "•",link("Homework", "assignments/04-power_homework.md")),
   
+  "—", "Mar 17", "**NO CLASS - SPRING BREAK**", "", "",
+
   # Week 5
-  "5", "Mar 17", "Pseudoreplication and Confounding",
+  "5", "Mar 24", "Pseudoreplication and Confounding",
   paste(link("Prep", "prep-checklist.qmd#05-pseudoreplication"), "•", link("Slides", "lectures/05-pseudoreplication_slides.pdf"), "•", link("Readings", "readings.qmd#05-pseudoreplication")),
   link("Homework", "assignments/05-pseudoreplication_homework.md"),
   
   # Week 6
-  "6", "Mar 24", "Circular analysis, Regression to the mean, and Sampling biases",
+  "6", "Mar 31", "Circular analysis, Regression to the mean, and Sampling biases",
   paste(link("Prep", "prep-checklist.qmd#06-circular-analysis"), "•", link("Slides", "lectures/06-circular-analysis_slides.pdf"), "•", link("Readings", "readings.qmd#06-circular-analysis")),
   link("Homework", "assignments/06-circular-analysis_homework.md"),
   
   # Week 7
-  "7", "Mar 31", "Bayesian reasoning",
+  "7", "Apr 07", "Bayesian reasoning",
   paste(link("Prep", "prep-checklist.qmd#07-bayesian"), "•", link("Slides", "lectures/07-bayesian_slides.pdf"), "•", link("Readings", "readings.qmd#07-bayesian")),
   link("Homework", "assignments/07-bayesian_homework.md"),
   
   # Week 8
-  "8", "Apr 07", "Measuring correlations",
+  "8", "Apr 14", "Measuring correlations",
   paste(link("Prep", "prep-checklist.qmd#08-correlation"), "•", link("Slides", "lectures/08-correlation_slides.pdf"), "•", link("Readings", "readings.qmd#08-correlation")),
   link("Homework", "assignments/08-correlation_homework.md"),
   
   # Week 9
-  "9", "Apr 14", "High-dimensional data and Machine learning pitfalls",
+  "9", "Apr 21", "High-dimensional data and Machine learning pitfalls",
   paste(link("Prep", "prep-checklist.qmd#09-highdim-ml"), "•", link("Slides", "lectures/09-highdim-ml_slides.pdf"), "•", link("Readings", "readings.qmd#09-highdim-ml")),
   link("Homework", "assignments/09-highdim-ml_homework.md"),
   
   # Week 10
-  "10", "Apr 21", "Data visualization and Statistical communication",
+  "10", "Apr 28", "Data visualization and Statistical communication",
   paste(link("Prep", "prep-checklist.qmd#10-visualization"), "•", link("Slides", "lectures/10-visualization_slides.pdf"), "•", link("Readings", "readings.qmd#10-visualization")),
   link("Homework", "assignments/10-visualization_homework.md"),
   
   # Week 11
-  "11", "Apr 28", "Reproducible research, Data sharing, and Ethical transparency",
+  "11", "May 05", "Reproducible research, Data sharing, and Ethical transparency",
   paste(link("Prep", "prep-checklist.qmd#11-reproducibility"), "•", link("Slides", "lectures/11-reproducibility_slides.pdf"), "•", link("Readings", "readings.qmd#11-reproducibility")),
-  link("Homework", "assignments/11-reproducibility_homework.md"),
+  paste(link("Homework", "assignments/11-reproducibility_homework.md"), "• **Final exam**"),
   
-  # Week 12
-  "12", "May 05", "AI-assisted data analysis",
-  paste(link("Prep", "prep-checklist.qmd#12-ai-assisted"), "•", link("Slides", "lectures/12-ai-assisted_slides.pdf"), "•", link("Readings", "readings.qmd#12-ai-assisted")),
-  "**Final exam**"
+  # Bonus Week
+  "—", "May 12", "**NO CLASS** | Watch video | AI-assisted data analysis",
+  paste(link("Prep", "prep-checklist.qmd#12-ai-assisted"), "•", "Video", "•", link("Slides", "lectures/12-ai-assisted_slides.pdf"), "•", link("Readings", "readings.qmd#12-ai-assisted")),
+  ""
 )
 
 schedule %>%
