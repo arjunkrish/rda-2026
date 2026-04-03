@@ -9,14 +9,6 @@
 
 
 # ── Part 2: Generating Multiple Power Curves for Detecting Unfair Coins ───────
-#
-# In the in-class assignment you produced one power curve for a fixed sample
-# size (num_flips = 20). Here you extend that analysis to multiple sample
-# sizes. You will see how power changes as a function of BOTH effect size
-# (coin bias) AND sample size (number of flips). This kind of analysis is
-# exactly what researchers use when designing a study: they ask "given the
-# effect size I expect, how many observations do I need to have adequate power?"
-
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -24,8 +16,6 @@ import matplotlib.cm as cm
 
 
 # ── Parameters ───────────────────────────────────────────────────────────────
-#
-# Same random seed and significance threshold as the in-class script.
 
 rng   = np.random.default_rng(seed=42)  # reproducible random-number generator
 alpha = 0.05                             # significance threshold
@@ -40,15 +30,6 @@ flips = [5, 10, 50, 100]
 
 
 # ── Step 1: Build a null distribution for each sample size ───────────────────
-#
-# Each sample size has its own null distribution: with more flips, the
-# distribution of head-counts under H0 shifts (spreads wider in raw counts
-# but becomes relatively narrower around num_flips/2 as a fraction). We must
-# use the *correct* null distribution for each sample size when computing
-# p-values later.
-#
-# We store null distributions in a dictionary keyed by sample size for
-# clean, readable lookup.
 
 null_distributions = {}   # dict: num_flips → array of 10,000 head-counts under H0
 
@@ -60,11 +41,6 @@ for n in flips:
 
 
 # ── Step 2: Visualise the null distributions ─────────────────────────────────
-#
-# Plotting all four null distributions side by side lets you see concretely
-# how the spread of the distribution changes with sample size. Even though
-# the distributions get wider in absolute terms, the *relative* variability
-# (coefficient of variation) decreases — larger n → more precise estimates.
 
 fig, axes = plt.subplots(1, len(flips), figsize=(16, 4))
 for ax, n in zip(axes, flips):
@@ -86,12 +62,6 @@ plt.show()
 
 
 # ── Step 3: Compute power curves for each sample size ────────────────────────
-#
-# We now repeat the power-curve calculation from the in-class script, but for
-# every sample size in `flips`. For each (sample_size, coin_bias) pair we:
-#   1. Simulate num_experiments biased-coin experiments
-#   2. Test each against the corresponding null distribution
-#   3. Estimate power as the rejection rate
 #
 # NOTE: this triple-nested loop is intentionally slow to make the logic
 # transparent. On a modern laptop it takes 1–3 minutes. Be patient.
@@ -121,10 +91,6 @@ for n in flips:
 
 
 # ── Step 4: Visualise multiple power curves ───────────────────────────────────
-#
-# Plot all power curves on one axes to compare them directly. Power curves
-# for larger sample sizes rise more steeply away from 0.5 — you need smaller
-# effects (less biased coins) before you can reliably detect them.
 
 # Organise results by sample size for plotting
 results_by_n = {n: [] for n in flips}

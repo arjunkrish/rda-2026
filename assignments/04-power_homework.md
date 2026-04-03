@@ -7,7 +7,7 @@ observations you collect.
 Write your answers directly in the script as comments, export as a PDF, and
 submit using [this form](https://forms.gle/977e4vrVshwTyTcK7).
 
-1. Download the [R script](./04-power_homework_student.R) or [Python script](./04-power_homework_student.py)
+1. Download the [R script](./04-power_homework.R) or [Python script](./04-power_homework.py)
 2. Add detailed comments at every step explaining both *what* the code does and *what it means statistically*
 3. Run the code and answer all questions in the spaces provided
 

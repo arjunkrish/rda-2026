@@ -126,10 +126,10 @@ schedule <- tribble(
   # Week 11
   "11", "May 05", "Reproducible research, Data sharing, and Ethical transparency",
   paste(link("Prep", "prep-checklist.qmd#11-reproducibility"), "•", link("Slides", "lectures/11-reproducibility_slides.pdf"), "•", link("Readings", "readings.qmd#11-reproducibility")),
-  paste(link("Homework", "assignments/11-reproducibility_homework.md"), "• **Final exam**"),
+  paste(link("Homework", "assignments/11-reproducibility_homework.md"), "• Final exam"),
   
   # Bonus Week
-  "—", "May 12", "**NO CLASS** | Watch video | AI-assisted data analysis",
+  "—", "Bonus lecture", "**NO CLASS; Watch video** | AI-assisted data analysis",
   paste(link("Prep", "prep-checklist.qmd#12-ai-assisted"), "•", "Video", "•", link("Slides", "lectures/12-ai-assisted_slides.pdf"), "•", link("Readings", "readings.qmd#12-ai-assisted")),
   ""
 )
@@ -153,7 +153,7 @@ schedule %>%
   column_spec(4, width = "30%") %>%
   column_spec(5, width = "15%") %>%
   row_spec(0, bold = TRUE, background = "#f8f9fa") %>%
-  row_spec(c(1, 2), background = "#fff3cd")
+  row_spec(c(1, 2, 7, 15), background = "#fff3cd")
 ```
 
 ### Weekly topics overview

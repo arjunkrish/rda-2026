@@ -9,20 +9,11 @@
 
 
 # ── Part 2: Generating Multiple Power Curves for Detecting Unfair Coins ───────
-#
-# In the in-class assignment you produced one power curve for a fixed sample
-# size (num_flips = 20). Here you extend that analysis to multiple sample
-# sizes to see how power changes as a function of BOTH effect size (coin bias)
-# AND sample size (number of flips). This is exactly the analysis researchers
-# use when designing a study: "given the effect I expect, how many observations
-# do I need for adequate power?"
 
 library(tidyverse)
 
 
 # ── Parameters ───────────────────────────────────────────────────────────────
-#
-# set.seed() fixes the random-number sequence for reproducibility.
 
 set.seed(42)
 
@@ -37,14 +28,6 @@ flips <- c(5, 10, 50, 100)
 
 
 # ── Step 1: Build a null distribution for each sample size ───────────────────
-#
-# Each sample size has its own null distribution: with more flips, the
-# distribution of head-counts under H0 spreads wider in raw counts but
-# becomes relatively more concentrated around num_flips/2 as a fraction.
-# We must pair each p-value calculation with the correct null distribution.
-#
-# We store the data in a tidy tibble (one row per simulation per sample size)
-# so that downstream ggplot code is straightforward.
 
 null_df <- map_dfr(flips, \(n) {
   tibble(
@@ -57,9 +40,6 @@ null_df <- map_dfr(flips, \(n) {
 
 
 # ── Step 2: Visualise the null distributions ─────────────────────────────────
-#
-# Plotting all four null distributions side by side reveals how the spread
-# changes with sample size.
 
 null_df |>
   ggplot(aes(x = fair_num_heads)) +
@@ -83,12 +63,6 @@ null_df |>
 
 
 # ── Step 3: Compute power curves for each sample size ────────────────────────
-#
-# For each (sample_size, coin_bias) combination we:
-#   1. Retrieve the pre-computed null distribution for that sample size
-#   2. Simulate num_experiments biased-coin experiments
-#   3. Compute the p-value for each experiment against the null
-#   4. Estimate power as the fraction of experiments where p < alpha
 #
 # NOTE: This computation is intentionally written with explicit loops to make
 # each step readable. It will take 1–3 minutes on a modern laptop.
@@ -123,9 +97,6 @@ power_results <- map_dfr(flips, \(n) {
 
 
 # ── Step 4: Visualise multiple power curves ───────────────────────────────────
-#
-# All power curves on one axes for direct comparison. Larger n → curves rise
-# more steeply, meaning you can detect smaller biases.
 
 power_results |>
   mutate(sample_size = factor(sample_size)) |>
