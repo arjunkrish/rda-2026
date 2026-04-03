@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>power_homework – HMGP 7622: Rethinking Data Analysis</title>
+<title>circular-analysis_homework – HMGP 7622: Rethinking Data Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,9 +130,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#statistical-power-week-04-homework-assignment" id="toc-statistical-power-week-04-homework-assignment" class="nav-link active" data-scroll-target="#statistical-power-week-04-homework-assignment">Statistical power | Week 04 Homework assignment</a></li>
+  <li><a href="#circular-analysis-and-sampling-bias-week-06-homework-assignment" id="toc-circular-analysis-and-sampling-bias-week-06-homework-assignment" class="nav-link active" data-scroll-target="#circular-analysis-and-sampling-bias-week-06-homework-assignment">Circular Analysis and Sampling Bias | Week 06 Homework assignment</a></li>
   </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/arjunkrish/rda-2026/edit/main/assignments/04-power_homework.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/arjunkrish/rda-2026/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/arjunkrish/rda-2026/edit/main/assignments/06-circular-analysis_homework.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/arjunkrish/rda-2026/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -140,25 +140,45 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="statistical-power-week-04-homework-assignment" class="level1">
-<h1>Statistical power | Week 04 Homework assignment</h1>
-<p>This assignment extends the in-class power analysis to multiple sample sizes, so you can see how power depends on both effect size and the number of observations you collect.</p>
-<p>Write your answers directly in the script as comments, export as a PDF, and submit using <a href="https://forms.gle/977e4vrVshwTyTcK7">this form</a>.</p>
+<section id="circular-analysis-and-sampling-bias-week-06-homework-assignment" class="level1">
+<h1>Circular Analysis and Sampling Bias | Week 06 Homework assignment</h1>
+<p>This assignment extends the in-class introduction to circular analysis (double-dipping) and sampling bias. You will work through four coding exercises that each isolate a distinct mechanism by which an analysis pipeline can produce misleading results even when no real effect exists: clustering and testing on the same data, inheriting inflated group structure through label propagation, labeling by proximity to arbitrary reference points, and comparing extreme values across populations of unequal size.</p>
+<p>Download the <a href="./06-circular-analysis_homework.R">R script</a> or <a href="./06-circular-analysis_homework.py">Python script</a>, annotate the code, run it, and answer the questions embedded in the script as well as the questions below. Submit your completed script as a PDF using <a href="https://forms.gle/977e4vrVshwTyTcK7">this form</a>.</p>
+<hr>
+<section id="exercise-1-circular-analysis-cluster-then-test-on-the-same-data" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1-circular-analysis-cluster-then-test-on-the-same-data">Exercise 1 — Circular analysis: cluster-then-test on the same data</h3>
 <ol type="1">
-<li>Download the <a href="./04-power_homework.R">R script</a> or <a href="./04-power_homework.py">Python script</a></li>
-<li>Add detailed comments at every step explaining both <em>what</em> the code does and <em>what it means statistically</em></li>
-<li>Run the code and answer all questions in the spaces provided</li>
+<li><p>Look at the p-values and effect sizes your script produced. Are they what you would expect if the null hypothesis (no group differences) were true? What do these results tell you — and what do they <em>not</em> tell you — about the data?</p></li>
+<li><p>K-means minimises within-cluster sum of squares. Explain in your own words why that objective makes the subsequent t-test circular. What would a valid test of group differences require that this pipeline does not provide?</p></li>
 </ol>
-<p><strong>Questions:</strong></p>
+<hr>
+</section>
+<section id="exercise-2-circular-analysis-a-partial-fix-via-data-splitting" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-2-circular-analysis-a-partial-fix-via-data-splitting">Exercise 2 — Circular analysis: a partial fix via data splitting</h3>
 <ol start="3" type="1">
-<li><p>What are your observations on how the null distribution changes with sample size?</p></li>
-<li><p>What are your interpretations of the multiple power curves? Write your thoughts in terms of the dependence of power on both effect size and sample size.</p></li>
-<li><p>A national sports organisation wants to design an experiment to detect biased coins used in pre-game tosses. How would you use the power curves above to help them design the experiment? What questions would you need answered before making a specific sample-size recommendation?</p></li>
-<li><p>If you make a specific sample-size recommendation, write down what you will convey to the organisation in terms of error rates (false-positive rate and false-negative rate).</p></li>
-<li><p>Which parts of your reasoning and recommendations change if the organisation says it cannot tolerate more than 1 biased coin for every 100 coins it uses? (Hint: this corresponds to changing alpha from 0.05 to 0.01.)</p></li>
+<li><p>Compare the p-values from Exercise 2 (data splitting) with those from Exercise 1 (no split). Are they qualitatively different? Does data splitting appear to eliminate significance inflation? What does this suggest about treating data splitting as a universal safeguard against circular analysis?</p></li>
+<li><p>The k-NN classifier assigns test-set labels by spatial proximity to training points. In what sense is this still a form of double-dipping, even though the exact same rows are not reused? What property of a labeling rule makes a subsequent hypothesis test circular, regardless of whether the data are split?</p></li>
+</ol>
+<hr>
+</section>
+<section id="exercise-3-circular-analysis-the-voronoi-proximity-labeling-variant" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-3-circular-analysis-the-voronoi-proximity-labeling-variant">Exercise 3 — Circular analysis: the Voronoi / proximity-labeling variant</h3>
+<ol start="5" type="1">
+<li><p>The Voronoi boundary in Exercise 3 is the y-axis (the perpendicular bisector of segment AB). How does the orientation of AB relative to the tested variable <em>x</em> affect the magnitude of the resulting p-value? Predict what would happen — and why — if you rotated AB to lie along the y-axis instead (e.g., <code>ref_A = (0, −1)</code>, <code>ref_B = (0, 1)</code>). Test your prediction by modifying the script.</p></li>
+<li><p>In Exercise 2, labels were propagated by k-NN proximity. In Exercise 3, labels are assigned by proximity to two fixed reference points. Identify the shared flaw in these two procedures. State in general terms: what property of a labeling rule makes a subsequent hypothesis test circular?</p></li>
+</ol>
+<hr>
+</section>
+<section id="exercise-4-sampling-bias-outliers-and-population-size" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-4-sampling-bias-outliers-and-population-size">Exercise 4 — Sampling bias: outliers and population size</h3>
+<ol start="7" type="1">
+<li><p>The log-normal curve starts lower than both the normal and exponential curves at small population sizes. Explain why, in terms of the tail behaviour of each distribution. Your answer should reference the approximate growth formulas discussed in the script comments (√(2 ln <em>n</em>) for the normal, ln <em>n</em> for the exponential, exp(σ √(2 ln <em>n</em>)) for the log-normal).</p></li>
+<li><p>World athletics records are maintained separately for each age group (under-20, open, masters). Suppose a journalist reports that a 35-year-old holds a better marathon record than any under-20 athlete ever has. Using the intuition from Exercise 4, what question would you ask before accepting that conclusion, and what additional analysis would you propose?</p></li>
+<li><p>Rare genetic variants are far more likely to be discovered in large biobanks (<em>n</em> ~ 500,000) than in small cohort studies (<em>n</em> ~ 500). How does the sampling-bias argument from Exercise 4 apply to interpreting effect-size estimates for variants initially discovered in large vs.&nbsp;small studies? (<em>Hint:</em> think about which variants a small study can detect and how that selection shapes the distribution of reported effect sizes.)</p></li>
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -570,7 +590,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/arjunkrish/rda-2026/edit/main/assignments/04-power_homework.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/arjunkrish/rda-2026/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/arjunkrish/rda-2026/edit/main/assignments/06-circular-analysis_homework.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/arjunkrish/rda-2026/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
