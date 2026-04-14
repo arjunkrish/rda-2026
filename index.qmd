@@ -111,7 +111,7 @@ schedule <- tribble(
   # Week 8
   "8", "Apr 14", "Measuring correlations",
   paste(link("Prep", "prep-checklist.qmd#08-correlation"), "•", link("Slides", "lectures/08-correlation_slides.pdf"), "•", link("Readings", "readings.qmd#08-correlation")),
-  link("Homework", "assignments/08-correlation_homework.md"),
+  paste(link("In-class", "assignments/08-correlation_inclass.md"), "•",link("Homework", "assignments/08-correlation_homework.md")),
   
   # Week 9
   "9", "Apr 21", "High-dimensional data and Machine learning pitfalls",
