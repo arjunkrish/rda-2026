@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/index.html</loc>
-    <lastmod>2026-03-26T22:10:06.597Z</lastmod>
+    <lastmod>2026-04-14T19:35:13.452Z</lastmod>
   </url>
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/resources/software-setup.html</loc>
     <lastmod>2026-02-12T10:05:50.808Z</lastmod>
   </url>
   <url>
-    <loc>https://arjunkrish.github.io/rda-2026/assignments/06-circular-analysis_homework.html</loc>
-    <lastmod>2026-04-03T22:33:52.491Z</lastmod>
+    <loc>https://arjunkrish.github.io/rda-2026/assignments/08-correlation_inclass.html</loc>
+    <lastmod>2026-04-14T19:39:08.818Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjunkrish.github.io/rda-2026/assignments/01-scientific-method_homework.html</loc>
+    <lastmod>2026-02-19T14:44:37.089Z</lastmod>
   </url>
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/assignments/04-power_inclass.html</loc>
@@ -49,8 +53,12 @@
     <lastmod>2026-04-03T22:32:03.932Z</lastmod>
   </url>
   <url>
-    <loc>https://arjunkrish.github.io/rda-2026/assignments/01-scientific-method_homework.html</loc>
-    <lastmod>2026-02-19T14:44:37.089Z</lastmod>
+    <loc>https://arjunkrish.github.io/rda-2026/assignments/08-correlation_homework.html</loc>
+    <lastmod>2026-04-14T19:39:31.032Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjunkrish.github.io/rda-2026/assignments/06-circular-analysis_homework.html</loc>
+    <lastmod>2026-04-03T22:33:52.491Z</lastmod>
   </url>
   <url>
     <loc>https://arjunkrish.github.io/rda-2026/assignments/03-pvalues_inclass.html</loc>
