@@ -126,7 +126,7 @@ schedule <- tribble(
   # Week 11
   "11", "May 05", "Reproducible research, Data sharing | Final exam",
   paste(link("Prep", "prep-checklist.qmd#11-reproducibility"), "•", link("Slides", "lectures/11-reproducibility_slides.pdf"), "•", link("Readings", "readings.qmd#11-reproducibility")),
-  Final exam,
+  "Final exam",
   
   # Bonus Week
   "—", "Bonus lecture", "**NO CLASS; Watch video** | AI-assisted data analysis",
