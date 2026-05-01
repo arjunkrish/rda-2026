@@ -121,7 +121,7 @@ schedule <- tribble(
   # Week 10
   "10", "Apr 28", "Data visualization and Statistical communication",
   paste(link("Prep", "prep-checklist.qmd#10-visualization"), "•", link("Slides", "lectures/10-visualization_slides.pdf"), "•", link("Readings", "readings.qmd#10-visualization")),
-  ,
+  "",
   
   # Week 11
   "11", "May 05", "Reproducible research, Data sharing | Final exam",
